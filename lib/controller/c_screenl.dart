@@ -36,16 +36,16 @@ class PathAudioNumber {
 }
 
 class PathAudioGeezNumber {
-  static String num1 = 'audios/amh/kutir/1.mp3';
-  static String num2 = 'audios/amh/kutir/2.mp3';
-  static String num3 = 'audios/amh/kutir/3.mp3';
-  static String num4 = 'audios/amh/kutir/4.mp3';
-  static String num5 = 'audios/amh/kutir/5.mp3';
-  static String num6 = 'audios/amh/kutir/6.mp3';
-  static String num7 = 'audios/amh/kutir/7.mp3';
-  static String num8 = 'audios/amh/kutir/8.mp3';
-  static String num9 = 'audios/amh/kutir/9.mp3';
-  static String num10 = 'audios/amh/kutir/10.mp3';
+  static String num1 = 'audios/amh/kutir/1.m4a';
+  static String num2 = 'audios/amh/kutir/2.m4a';
+  static String num3 = 'audios/amh/kutir/3.m4a';
+  static String num4 = 'audios/amh/kutir/4.m4a';
+  static String num5 = 'audios/amh/kutir/5.m4a';
+  static String num6 = 'audios/amh/kutir/6.m4a';
+  static String num7 = 'audios/amh/kutir/7.m4a';
+  static String num8 = 'audios/amh/kutir/8.m4a';
+  static String num9 = 'audios/amh/kutir/9.m4a';
+  static String num10 = 'audios/amh/kutir/10.m4a';
 }
 
 //class PathAudioColors {

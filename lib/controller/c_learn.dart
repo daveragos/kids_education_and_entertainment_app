@@ -13,25 +13,25 @@ class ControllerLearn {
   static final List<ModelLearn> _dataLearn = [
     ModelLearn(
       // image: 'assets/images/arabica.png',
-      image: 'assets/images/c1.png',
+      image: 'assets/images/geeznumber.gif',
       title: 'Learn Geez',
       page: const GeezNumbetPage(),
     ),
     ModelLearn(
       title: 'Learn Alphabet',
-      image: 'assets/images/alphabet.png',
+      image: 'assets/images/alphabet.gif',
       page: const AlphabetScreen(),
     ),
     ModelLearn(
       title: 'Learn Numbers',
       // image: 'assets/images/imagefour.jpg',
-      image: 'assets/images/c1.png',
+      image: 'assets/images/numbers.gif',
       page: const NumberScreen(),
     ),
     ModelLearn(
       title: 'Learn Alphabet',
       // image: 'assets/images/colors.jpeg',
-      image: 'assets/images/c1.png',
+      image: 'assets/images/fidel.gif',
       page: const FideScreen(),
     ),
     ModelLearn(
