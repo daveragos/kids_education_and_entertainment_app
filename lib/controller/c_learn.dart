@@ -30,12 +30,14 @@ class ControllerLearn {
     ),
     ModelLearn(
       title: 'Learn Alphabet',
-      image: 'assets/images/colors.jpeg',
+      // image: 'assets/images/colors.jpeg',
+      image: 'assets/images/c1.png',
       page: const FideScreen(),
     ),
     ModelLearn(
       title: 'Learn Fidel',
-      image: 'assets/images/animals.jpg',
+      // image: 'assets/images/animals.jpg',
+      image: 'assets/images/c1.png',
       page: const AmaharicFidel(),
     ),
   ];
