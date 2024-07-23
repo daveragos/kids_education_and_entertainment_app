@@ -1,0 +1,46 @@
+name: kids_education_and_entertainment_app
+description: "A new Flutter project."
+publish_to: 'none'
+version: 0.1.0
+
+environment:
+  sdk: '>=3.4.3 <4.0.0'
+
+dependencies:
+  flutter:
+    sdk: flutter
+  audioplayers: ^6.0.0
+  google_fonts: ^6.2.1
+  cupertino_icons: ^1.0.8
+  flutter_svg: ^2.0.10+1
+  flutter_tts: ^4.0.2
+  curved_navigation_bar: ^1.0.6
+  webview_flutter: ^4.8.0
+  transparent_image: ^2.0.1
+  # animated_background: ^2.0.0 
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+  flutter_lints: ^4.0.0
+
+flutter:
+  uses-material-design: true
+  assets:
+    - assets/images/
+    - assets/images/play-button.svg
+    - assets/audios/
+    - assets/images/children_background.gif
+    - assets/images/geez1.gif
+    - assets/images/geez2.gif
+    - assets/images/geez3.gif
+    - assets/images/alphabet/
+    - assets/images/learn_page.gif
+    - assets/images/10.gif
+    - assets/images/99.gif
+    - assets/images/88.gif
+    - assets/images/77.gif
+    - assets/images/66.gif
+    - assets/images/55.gif
+    - assets/images/44.gif
+

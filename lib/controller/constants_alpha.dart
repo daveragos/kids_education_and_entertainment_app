@@ -1,0 +1,323 @@
+import 'package:flutter/material.dart';
+import 'package:kids_education_and_entertainment_app/component/item.dart';
+//import 'package:kids_education_and_entertainment_app/Controller/c_screenl.dart';
+
+class AlphabetConstantsAlpha {
+  static const String A_Z = 'A-Z';  // Changed to UPPER_CASE
+  static const String backgroundAudioPath = 'assets/audios/baby-shark.mp3';
+
+  static const List<Item> alphabetItems = [  // Changed to const List
+    Item(
+      title: 'A',
+      description: ' A',
+      iconAsset: 'assets/images/a1.png',
+      backgroundColor: Colors.blue,
+      backgroundGradient: LinearGradient(
+        colors: [Colors.black, Colors.white],
+        begin: Alignment.topLeft,
+        end: Alignment.bottomRight,
+        //audioPath: 'assets/audios/kid-a.mp3',
+      ),
+    ),
+    Item(
+      title: 'B',
+      description: 'B',
+      iconAsset: 'assets/images/b1.png',
+      backgroundColor: Colors.blue,
+      backgroundGradient: LinearGradient(
+        colors: [Colors.black, Colors.white],
+        begin: Alignment.topLeft,
+        end: Alignment.bottomRight,
+        // audioPath: 'assets/audios/kid-b.mp3',
+      ),
+    ),
+    Item(
+      title: 'C',
+      description: ' C',
+      iconAsset: 'assets/images/c1.png',
+      backgroundColor: Colors.blue,
+      backgroundGradient: LinearGradient(
+        colors: [Colors.black, Colors.white],
+        begin: Alignment.topLeft,
+        end: Alignment.bottomRight,
+        // audioPath: 'assets/audios/kid-c.mp3',
+      ),
+    ),
+    Item(
+      title: 'D',
+      description: ' D',
+      iconAsset: 'assets/images/d1.png',
+      backgroundColor: Colors.blue,
+      backgroundGradient: LinearGradient(
+        colors: [Colors.black, Colors.white],
+        begin: Alignment.topLeft,
+        end: Alignment.bottomRight,
+        // audioPath: 'assets/audios/kid-d.mp3',
+      ),
+    ),
+    Item(
+      title: 'E',
+      description: ' E',
+      iconAsset: 'assets/images/e1.png',
+      backgroundColor: Colors.blue,
+      backgroundGradient: LinearGradient(
+        colors: [Colors.black, Colors.white],
+        begin: Alignment.topLeft,
+        end: Alignment.bottomRight,
+        // audioPath: 'assets/audios/kid-e.mp3',
+      ),
+    ),
+    Item(
+      title: 'F',
+      description: 'F',
+      iconAsset: 'assets/images/f1.png',
+      backgroundColor: Colors.blue,
+      backgroundGradient: LinearGradient(
+        colors: [Colors.black, Colors.white],
+        begin: Alignment.topLeft,
+        end: Alignment.bottomRight,
+        // audioPath: 'assets/audios/kid-f.mp3',
+      ),
+    ),
+    Item(
+      title: 'G',
+      description: 'Description for G',
+      iconAsset: 'assets/images/g1.png',
+      backgroundColor: Colors.blue,
+      backgroundGradient: LinearGradient(
+        colors: [Colors.black, Colors.white],
+        begin: Alignment.topLeft,
+        end: Alignment.bottomRight,
+        // audioPath: 'assets/audios/kid-g.mp3',
+      ),
+    ),
+    Item(
+      title: 'H',
+      description: ' H',
+      iconAsset: 'assets/images/h1.png',
+      backgroundColor: Colors.blue,
+      backgroundGradient: LinearGradient(
+        colors: [Colors.black, Colors.white],
+        begin: Alignment.topLeft,
+        end: Alignment.bottomRight,
+        // audioPath: 'assets/audios/kid-h.mp3',
+      ),
+    ),
+    Item(
+      title: 'I',
+      description: ' for I',
+      iconAsset: 'assets/images/i1.png',
+      backgroundColor: Colors.blue,
+      backgroundGradient: LinearGradient(
+        colors: [Colors.black, Colors.white],
+        begin: Alignment.topLeft,
+        end: Alignment.bottomRight,
+        // audioPath: 'assets/audios/kid-i.mp3',
+      ),
+    ),
+    Item(
+      title: 'J',
+      description: ' for J',
+      iconAsset: 'assets/images/j1.png',
+      backgroundColor: Colors.blue,
+      backgroundGradient: LinearGradient(
+        colors: [Colors.black, Colors.white],
+        begin: Alignment.topLeft,
+        end: Alignment.bottomRight,
+        // audioPath: 'assets/audios/kid-j.mp3',
+      ),
+    ),
+    Item(
+      title: 'K',
+      description: ' for K',
+      iconAsset: 'assets/images/k1.png',
+      backgroundColor: Colors.blue,
+      backgroundGradient: LinearGradient(
+        colors: [Colors.black, Colors.white],
+        begin: Alignment.topLeft,
+        end: Alignment.bottomRight,
+        // audioPath: 'assets/audios/kid-k.mp3',
+      ),
+    ),
+    Item(
+      title: 'L',
+      description: ' for L',
+      iconAsset: 'assets/images/l1.png',
+      backgroundColor: Colors.blue,
+      backgroundGradient: LinearGradient(
+        colors: [Colors.black, Colors.white],
+        begin: Alignment.topLeft,
+        end: Alignment.bottomRight,
+        // audioPath: 'assets/audios/kid-l.mp3',
+      ),
+    ),
+    Item(
+      title: 'M',
+      description: ' for M',
+      iconAsset: 'assets/images/m1.png',
+      backgroundColor: Colors.blue,
+      backgroundGradient: LinearGradient(
+        colors: [Colors.black, Colors.white],
+        begin: Alignment.topLeft,
+        end: Alignment.bottomRight,
+        // audioPath: 'assets/audios/kid-m.mp3',
+      ),
+    ),
+    Item(
+      title: 'N',
+      description: ' for N',
+      iconAsset: 'assets/images/n1.png',
+      backgroundColor: Colors.blue,
+      backgroundGradient: LinearGradient(
+        colors: [Colors.black, Colors.white],
+        begin: Alignment.topLeft,
+        end: Alignment.bottomRight,
+        // audioPath: 'assets/audios/kid-n.mp3',
+      ),
+    ),
+    Item(
+      title: 'O',
+      description: ' for O',
+      iconAsset: 'assets/images/o1.png',
+      backgroundColor: Colors.blue,
+      backgroundGradient: LinearGradient(
+        colors: [Colors.black, Colors.white],
+        begin: Alignment.topLeft,
+        end: Alignment.bottomRight,
+        // audioPath: 'assets/audios/kid-o.mp3',
+      ),
+    ),
+    Item(
+      title: 'P',
+      description: ' for P',
+      iconAsset: 'assets/images/p1.png',
+      backgroundColor: Colors.blue,
+      backgroundGradient: LinearGradient(
+        colors: [Colors.black, Colors.white],
+        begin: Alignment.topLeft,
+        end: Alignment.bottomRight,
+        // audioPath: 'assets/audios/kid-p.mp3',
+      ),
+    ),
+    Item(
+      title: 'Q',
+      description: ' for Q',
+      iconAsset: 'assets/images/q1.png',
+      backgroundColor: Colors.blue,
+      backgroundGradient: LinearGradient(
+        colors: [Colors.black, Colors.white],
+        begin: Alignment.topLeft,
+        end: Alignment.bottomRight,
+        // audioPath: 'assets/audios/kid-q.mp3',
+      ),
+    ),
+    Item(
+      title: 'R',
+      description: ' for R',
+      iconAsset: 'assets/images/r1.png',
+      backgroundColor: Colors.blue,
+      backgroundGradient: LinearGradient(
+        colors: [Colors.black, Colors.white],
+        begin: Alignment.topLeft,
+        end: Alignment.bottomRight,
+        // audioPath: 'assets/audios/kid-r.mp3',
+      ),
+    ),
+    Item(
+      title: 'S',
+      description: ' for S',
+      iconAsset: 'assets/images/s1.png',
+      backgroundColor: Colors.blue,
+      backgroundGradient: LinearGradient(
+        colors: [Colors.black, Colors.white],
+        begin: Alignment.topLeft,
+        end: Alignment.bottomRight,
+        // audioPath: 'assets/audios/kid-s.mp3',
+      ),
+    ),
+    Item(
+      title: 'T',
+      description: ' for T',
+      iconAsset: 'assets/images/t1.png',
+      backgroundColor: Colors.blue,
+      backgroundGradient: LinearGradient(
+        colors: [Colors.black, Colors.white],
+        begin: Alignment.topLeft,
+        end: Alignment.bottomRight,
+        // audioPath: 'assets/audios/kid-t.mp3',
+      ),
+    ),
+    Item(
+      title: 'U',
+      description: ' for U',
+      iconAsset: 'assets/images/u1.png',
+      backgroundColor: Colors.blue,
+      backgroundGradient: LinearGradient(
+        colors: [Colors.black, Colors.white],
+        begin: Alignment.topLeft,
+        end: Alignment.bottomRight,
+        // audioPath: 'assets/audios/kid-u.mp3',
+      ),
+    ),
+    Item(
+      title: 'V',
+      description: ' for V',
+      iconAsset: 'assets/images/v1.png',
+      backgroundColor: Colors.blue,
+      backgroundGradient: LinearGradient(
+        colors: [Colors.black, Colors.white],
+        begin: Alignment.topLeft,
+        end: Alignment.bottomRight,
+        // audioPath: 'assets/audios/kid-v.mp3',
+      ),
+    ),
+    Item(
+      title: 'W',
+      description: ' for W',
+      iconAsset: 'assets/images/w1.png',
+      backgroundColor: Colors.blue,
+      backgroundGradient: LinearGradient(
+        colors: [Colors.black, Colors.white],
+        begin: Alignment.topLeft,
+        end: Alignment.bottomRight,
+        // audioPath: 'assets/audios/kid-w.mp3',
+      ),
+    ),
+    Item(
+      title: 'X',
+      description: ' for X',
+      iconAsset: 'assets/images/x1.png',
+      backgroundColor: Colors.blue,
+      backgroundGradient: LinearGradient(
+        colors: [Colors.black, Colors.white],
+        begin: Alignment.topLeft,
+        end: Alignment.bottomRight,
+        // audioPath: 'assets/audios/kid-x.mp3',
+      ),
+    ),
+    Item(
+      title: 'Y',
+      description: ' for Y',
+      iconAsset: 'assets/images/y1.png',
+      backgroundColor: Colors.blue,
+      backgroundGradient: LinearGradient(
+        colors: [Colors.black, Colors.white],
+        begin: Alignment.topLeft,
+        end: Alignment.bottomRight,
+        // audioPath: 'assets/audios/kid-y.mp3',
+      ),
+    ),
+    Item(
+      title: 'Z',
+      description: ' for Z',
+      iconAsset: 'assets/images/z1.png',
+      backgroundColor: Colors.blue,
+      backgroundGradient: LinearGradient(
+        colors: [Colors.black, Colors.white],
+        begin: Alignment.topLeft,
+        end: Alignment.bottomRight,
+        // audioPath: 'assets/audios/kid-z.mp3',
+      ),
+    ),
+  ];
+}
