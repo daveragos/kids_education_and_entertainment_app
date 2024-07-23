@@ -23,12 +23,12 @@ class AppBarSimple extends StatelessWidget implements PreferredSizeWidget {
               letterSpacing: 2,
             ),
           ),
-          const SizedBox(width: 10),
-          Image.asset(
-            "assets/images/play-button.png",
-            height: 40,
-            width: 40,
-          ),
+          // const SizedBox(width: 10),
+          // Image.asset(
+          //   "assets/images/play-button.png",
+          //   height: 40,
+          //   width: 40,
+          // ),
         ],
       ),
       centerTitle: true,

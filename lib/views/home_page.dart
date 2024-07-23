@@ -4,6 +4,8 @@ import 'package:kids_education_and_entertainment_app/component/drawer_custom.dar
 import 'package:kids_education_and_entertainment_app/component/navigation_bar.dart';
 import 'package:kids_education_and_entertainment_app/views/learn_page.dart';
 import 'package:kids_education_and_entertainment_app/views/apps_page.dart';
+import 'package:kids_education_and_entertainment_app/views/story_page.dart';
+import 'package:kids_education_and_entertainment_app/views/video_page.dart';
 //import 'package:kids_education_and_entertainment_app/animated_background.dart';
 //import 'package:kids_education_and_entertainment_app/views/number_screen.dart'; // Import NumberScreen
 //import 'package:kids_education_and_entertainment_app/views/alphabet_screen.dart'; // Import AlphabetScreen
@@ -20,8 +22,8 @@ class _HomePageState extends State<HomePage> {
   int _indexPage = 0;
   final List<Widget> _pages = [
     const PageLearning(),
-    // PageVideo(),
-    // PageStory(),
+    const PageVideo(),
+    const PageStory(),
     const PageApps(),
   ];
 
@@ -29,7 +31,7 @@ class _HomePageState extends State<HomePage> {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: const AppBarSimple(),
-      drawer: DrawerCustom(),
+      drawer: const DrawerCustom(),
       body: _pages[_indexPage],
       bottomNavigationBar: CustomNavigationBar(
         indexpage: _indexPage,
