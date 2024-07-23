@@ -22,7 +22,7 @@ class PageLearningState extends State<PageLearning> {
 
   void _playBackgroundMusic() async {
     _player.setReleaseMode(ReleaseMode.loop);
-    await _player.play(AssetSource('audios/baby_shark.mp3'));
+    await _player.play(AssetSource('audios/background_music.m4a'));
   }
 
   @override

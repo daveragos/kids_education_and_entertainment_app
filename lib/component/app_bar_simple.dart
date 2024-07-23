@@ -25,7 +25,7 @@ class AppBarSimple extends StatelessWidget implements PreferredSizeWidget {
           ),
           const SizedBox(width: 10),
           Image.asset(
-            "assets/logo/rocket.png",
+            "assets/images/play-button.png",
             height: 40,
             width: 40,
           ),
@@ -36,7 +36,7 @@ class AppBarSimple extends StatelessWidget implements PreferredSizeWidget {
         Padding(
           padding: EdgeInsets.symmetric(horizontal: 12.0),
           child: CircleAvatar(
-            backgroundImage: AssetImage("assets/logo/rocket.png"),
+            backgroundImage: AssetImage("assets/images/play-button.png"),
             radius: 25,
           ),
         ),

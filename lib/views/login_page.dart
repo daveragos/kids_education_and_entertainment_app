@@ -12,9 +12,9 @@ class LoginPage extends StatelessWidget {
         children: <Widget>[
           // GIF Background
 
-          FadeInImage.assetNetwork(
-            placeholder: 'assets/images/first_page.gif',
-            image: 'assets/images/first_page.gif',
+          FadeInImage(
+            placeholder: MemoryImage(kTransparentImage),
+            image: const AssetImage('assets/images/first_page.gif'),
             fit: BoxFit.cover,
           ),
           // Play Button

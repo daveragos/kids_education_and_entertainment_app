@@ -12,7 +12,8 @@ import 'package:kids_education_and_entertainment_app/views/fide_screen.dart';
 class ControllerLearn {
   static final List<ModelLearn> _dataLearn = [
     ModelLearn(
-      image: 'assets/images/arabica.png',
+      // image: 'assets/images/arabica.png',
+      image: 'assets/images/c1.png',
       title: 'Learn Geez',
       page: const GeezNumbetPage(),
     ),
@@ -23,7 +24,8 @@ class ControllerLearn {
     ),
     ModelLearn(
       title: 'Learn Numbers',
-      image: 'assets/images/imagefour.jpg',
+      // image: 'assets/images/imagefour.jpg',
+      image: 'assets/images/c1.png',
       page: const NumberScreen(),
     ),
     ModelLearn(
