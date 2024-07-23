@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:kids_education_and_entertainment_app/component/app_bar_simple.dart';
+import 'package:kids_education_and_entertainment_app/component/drawer_custom.dart';
 import 'package:kids_education_and_entertainment_app/component/navigation_bar.dart';
 import 'package:kids_education_and_entertainment_app/views/learn_page.dart';
 import 'package:kids_education_and_entertainment_app/views/apps_page.dart';
@@ -28,7 +29,7 @@ class _HomePageState extends State<HomePage> {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: const AppBarSimple(),
-      // drawer: DrawerCustom(),
+      drawer: DrawerCustom(),
       body: _pages[_indexPage],
       bottomNavigationBar: CustomNavigationBar(
         indexpage: _indexPage,
