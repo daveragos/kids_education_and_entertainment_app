@@ -31,13 +31,13 @@ class ControllerLearn {
     ModelLearn(
       title: 'Learn Alphabet',
       // image: 'assets/images/colors.jpeg',
-      image: 'assets/images/fidel.gif',
+      image: 'assets/images/geez.gif',
       page: const FideScreen(),
     ),
     ModelLearn(
       title: 'Learn Fidel',
       // image: 'assets/images/animals.jpg',
-      image: 'assets/images/c1.png',
+      image: 'assets/images/fidel.gif',
       page: const AmaharicFidel(),
     ),
   ];

@@ -55,7 +55,8 @@ class CardLearn extends StatelessWidget {
                     color: Colors.yellow, // White text for contrast
                     fontSize: 24,
                     fontWeight: FontWeight.bold,
-                    backgroundColor: Colors.black54, // Slightly transparent background
+                    backgroundColor:
+                        Colors.black54, // Slightly transparent background
                   ),
                 ),
               ),
