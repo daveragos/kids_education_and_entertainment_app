@@ -10,7 +10,10 @@ class AppConstantsAmharic {
       iconAsset: 'assets/images/fidel/ha.svg',
       backgroundColor: Colors.black,
       backgroundGradient: LinearGradient(
-        colors: [Colors.black, Colors.white],
+        colors: [
+          Colors.black,
+          Colors.white,
+        ],
         begin: Alignment.topLeft,
         end: Alignment.bottomRight,
       ),

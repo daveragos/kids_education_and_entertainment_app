@@ -32,12 +32,13 @@ class AppBarSimple extends StatelessWidget implements PreferredSizeWidget {
         ],
       ),
       centerTitle: true,
-      actions: const [
+      actions: [
         Padding(
-          padding: EdgeInsets.symmetric(horizontal: 12.0),
-          child: CircleAvatar(
-            backgroundImage: AssetImage("assets/images/logo.png"),
-            radius: 25,
+          padding: const EdgeInsets.only(right: 20.0),
+          child: Image.asset(
+            "assets/images/logo.png",
+            height: 40,
+            width: 40,
           ),
         ),
       ],
