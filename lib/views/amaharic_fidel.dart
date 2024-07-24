@@ -24,16 +24,9 @@ class ItemTile extends StatelessWidget {
     return Card(
       child: InkWell(
         onTap: () {
-          showDialog(
-            context: context,
-            builder: (BuildContext context) {
-              return _PopupDialog(
-                items: items,
-                currentIndex: index,
-                isAutoNextEnabled: isTimerEnabled,
-              );
-            },
-          );
+          //nav to a page with a column of the items upto +6 items
+          MaterialPageRoute(
+              builder: (context) => FidelList(items: items, index: index));
         },
         child: Container(
           decoration: BoxDecoration(
@@ -75,6 +68,34 @@ class ItemTile extends StatelessWidget {
             ],
           ),
         ),
+      ),
+    );
+  }
+}
+
+class FidelList extends StatelessWidget {
+  final List<Item> items;
+  final int index;
+
+  const FidelList({
+    required this.items,
+    required this.index,
+  });
+
+  @override
+  Widget build(BuildContext context) {
+    return Scaffold(
+      appBar: AppBar(
+        title: Text(items[index].title),
+      ),
+      body: ListView.builder(
+        itemCount: items.length,
+        itemBuilder: (context, index) {
+          return ListTile(
+            title: Text(items[index].title),
+            subtitle: Text(items[index].description),
+          );
+        },
       ),
     );
   }
@@ -303,20 +324,28 @@ class _AmaharicFidelState extends State<AmaharicFidel> {
         ),
       ),
       body: Padding(
-        padding: const EdgeInsets.all(9),
-        child: GridView.count(
-          crossAxisCount: MediaQuery.of(context).size.width ~/ 200,
-          childAspectRatio: 0.8,
-          children: List.generate(
-            items.length,
-            (index) => ItemTile(
-              index: index,
-              items: items,
-              isTimerEnabled: isTimerEnabled,
+          padding: const EdgeInsets.all(9),
+          child: GridView.count(
+            crossAxisCount: MediaQuery.of(context).size.width ~/ 200,
+            childAspectRatio: 0.8,
+            children: List.generate(
+              (items.length / 7)
+                  .ceil(), // Generate only as many items as there are every seventh item
+              (index) {
+                int itemIndex = (index + 1) * 7 - 1;
+                if (itemIndex < items.length) {
+                  return ItemTile(
+                    index: itemIndex,
+                    items: items,
+                    isTimerEnabled: isTimerEnabled,
+                  );
+                } else {
+                  return SizedBox
+                      .shrink(); // Return an empty widget if the index is out of bounds
+                }
+              },
             ),
-          ),
-        ),
-      ),
+          )),
     );
   }
 }

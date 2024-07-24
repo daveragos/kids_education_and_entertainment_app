@@ -22,7 +22,7 @@ class _HomePageState extends State<HomePage> {
   int _indexPage = 0;
   final List<Widget> _pages = [
     const PageLearning(),
-    const PageVideo(),
+    PageVideo(),
     const PageStory(),
     const PageApps(),
   ];

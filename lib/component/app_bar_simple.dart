@@ -5,7 +5,7 @@ class AppBarSimple extends StatelessWidget implements PreferredSizeWidget {
   final String title;
 
   // Named parameter for title with a default value
-  const AppBarSimple({super.key, this.title = "kELEMIE KID'S"});
+  const AppBarSimple({super.key, this.title = 'አ ቦ ጊ ዳ'});
 
   @override
   Widget build(BuildContext context) {
@@ -36,7 +36,7 @@ class AppBarSimple extends StatelessWidget implements PreferredSizeWidget {
         Padding(
           padding: EdgeInsets.symmetric(horizontal: 12.0),
           child: CircleAvatar(
-            backgroundImage: AssetImage("assets/images/play-button.png"),
+            backgroundImage: AssetImage("assets/images/logo.png"),
             radius: 25,
           ),
         ),

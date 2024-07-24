@@ -31,7 +31,7 @@ class ControllerLearn {
     ModelLearn(
       title: 'Learn Alphabet',
       // image: 'assets/images/colors.jpeg',
-      image: 'assets/images/geez.gif',
+      image: 'assets/images/fidel.gif',
       page: const FideScreen(),
     ),
     ModelLearn(

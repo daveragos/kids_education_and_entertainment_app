@@ -12,15 +12,15 @@ class DrawerCustom extends StatelessWidget {
         children: [
           const DrawerHeader(
             decoration: BoxDecoration(
-              color: Colors.white,
+              color: Colors.lightBlue,
             ),
             child: Column(
-              crossAxisAlignment: CrossAxisAlignment.start,
+              crossAxisAlignment: CrossAxisAlignment.center,
               children: [
                 Text(
                   'አ ቦ ጊ ዳ',
                   style: TextStyle(
-                    fontSize: 20,
+                    fontSize: 30,
                     fontWeight: FontWeight.bold,
                   ),
                 ),

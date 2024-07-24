@@ -21,6 +21,10 @@ class PageLearningState extends State<PageLearning> {
   }
 
   void _playBackgroundMusic() async {
+    if (_player.state == PlayerState.playing) {
+      _player.stop();
+    }
+
     _player.setReleaseMode(ReleaseMode.loop);
     await _player.play(AssetSource('audios/background_music.m4a'));
   }
