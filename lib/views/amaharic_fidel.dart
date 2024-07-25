@@ -24,13 +24,12 @@ class ItemTile extends StatelessWidget {
     return Card(
       child: InkWell(
         onTap: () {
-          List<Item> itams = items.getRange(index, index + 6).toList();
+          List<Item> itams = items.getRange(index, index + 7).toList();
           Navigator.push(
             context,
             MaterialPageRoute(
               builder: (context) => FidelList(
                 items: itams,
-                index: index,
               ),
             ),
           );
@@ -41,38 +40,11 @@ class ItemTile extends StatelessWidget {
             gradient: item.backgroundGradient,
           ),
           padding: const EdgeInsets.symmetric(vertical: 10, horizontal: 5),
-          child: Column(
-            mainAxisAlignment: MainAxisAlignment.center,
-            crossAxisAlignment: CrossAxisAlignment.stretch,
-            children: [
-              Text(
-                item.title,
-                style: const TextStyle(
-                  fontWeight: FontWeight.bold,
-                  fontSize: 25,
-                  fontFamily: 'NotoSansEthiopic', // Use the Amharic font
-                ),
-                textAlign: TextAlign.center,
-              ),
-              LayoutBuilder(
-                builder: (BuildContext context, BoxConstraints constraints) {
-                  return SvgPicture.asset(
-                    item.iconAsset,
-                    width: MediaQuery.of(context).size.width * 0.2,
-                    height: MediaQuery.of(context).size.height * 0.2,
-                    alignment: Alignment.center,
-                  );
-                },
-              ),
-              const SizedBox(height: 10),
-              Text(
-                item.description,
-                textAlign: TextAlign.center,
-                style: const TextStyle(
-                  fontFamily: 'NotoSansEthiopic', // Use the Amharic font
-                ),
-              ),
-            ],
+          child: SvgPicture.asset(
+            item.iconAsset,
+            width: 200,
+            height: MediaQuery.of(context).size.height * 0.5,
+            alignment: Alignment.center,
           ),
         ),
       ),
@@ -82,18 +54,16 @@ class ItemTile extends StatelessWidget {
 
 class FidelList extends StatelessWidget {
   final List<Item> items;
-  final int index;
 
   const FidelList({
     required this.items,
-    required this.index,
   });
 
   @override
   Widget build(BuildContext context) {
     return Scaffold(
         appBar: AppBar(
-          title: Text(items[index].title),
+          title: Text(items.first.title),
         ),
         body: ListView.builder(
           itemCount: items.length,

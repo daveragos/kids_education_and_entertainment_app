@@ -31,6 +31,34 @@ flutter:
   assets:
     - assets/images/
     - assets/images/play-button.svg
+
+#ha
+    - assets/images/fidel/ha.svg
+    - assets/images/fidel/hu.svg
+    - assets/images/fidel/hi.svg
+    - assets/images/fidel/ha.svg
+    - assets/images/fidel/he.svg
+    - assets/images/fidel/h.svg
+    - assets/images/fidel/ho.svg
+#le
+    - assets/images/fidel/le.svg
+    - assets/images/fidel/lu.svg
+    - assets/images/fidel/li.svg
+    - assets/images/fidel/la.svg
+    - assets/images/fidel/le.svg
+    - assets/images/fidel/l.svg
+    - assets/images/fidel/lo.svg
+#halet_ha
+    - assets/images/fidel/halet_ha.svg
+    - assets/images/fidel/halet_hu.svg
+    - assets/images/fidel/halet_hi.svg
+    - assets/images/fidel/halet_ha.svg
+    - assets/images/fidel/halet_he.svg
+    - assets/images/fidel/halet_h.svg
+    - assets/images/fidel/halet_ho.svg
+
+
+
     - assets/audios/
     - assets/images/children_background.gif
     - assets/images/geez1.gif

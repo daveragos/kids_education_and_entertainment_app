@@ -213,16 +213,6 @@ class AppConstantsAmharic {
       ),
     ),
     Item(
-      title: 'ሑ',
-      description: 'ለ አንበሳ',
-      iconAsset: 'assets/images/fidel/halet_hu.svg',
-      backgroundColor: Colors.black,
-      backgroundGradient: LinearGradient(
-        colors: [Colors.black, Colors.white],
-        begin: Alignment.topLeft,
-      ),
-    ),
-    Item(
       title: 'ሕ',
       description: 'ለ አንበሳ',
       iconAsset: 'assets/images/fidel/halet_h.svg',
