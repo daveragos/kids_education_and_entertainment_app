@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:kids_education_and_entertainment_app/views/drawingboard.dart';
 
 class DrawerCustom extends StatelessWidget {
   const DrawerCustom({super.key});
@@ -53,7 +54,10 @@ class DrawerCustom extends StatelessWidget {
             leading: const Icon(Icons.gamepad),
             title: const Text('Draw Board'),
             onTap: () {
-              Navigator.pop(context);
+              Navigator.push(
+                  context,
+                  MaterialPageRoute(
+                      builder: (context) => const DrawingBoardPage()));
             },
           ),
         ],
