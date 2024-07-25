@@ -42,7 +42,7 @@ class ItemTile extends StatelessWidget {
           padding: const EdgeInsets.symmetric(vertical: 10, horizontal: 5),
           child: SvgPicture.asset(
             item.iconAsset,
-            width: 200,
+            width: MediaQuery.of(context).size.width * 0.5,
             height: MediaQuery.of(context).size.height * 0.5,
             alignment: Alignment.center,
           ),
@@ -68,9 +68,18 @@ class FidelList extends StatelessWidget {
         body: ListView.builder(
           itemCount: items.length,
           itemBuilder: (context, index) {
-            return ListTile(
-              title: Text(items[index].title),
-              subtitle: Text(items[index].description),
+            return Container(
+              decoration: BoxDecoration(
+                color: items[index].backgroundColor,
+                gradient: items[index].backgroundGradient,
+              ),
+              padding: const EdgeInsets.symmetric(vertical: 10, horizontal: 5),
+              child: SvgPicture.asset(
+                items[index].iconAsset,
+                width: MediaQuery.of(context).size.width * 0.5,
+                height: MediaQuery.of(context).size.height * 0.5,
+                alignment: Alignment.center,
+              ),
             );
           },
         ));
